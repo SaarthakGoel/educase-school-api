@@ -104,6 +104,10 @@ app.get('/getSchools' , (req , res) => {
   
 })
 
+app.get('/render' , (req , res) => {
+  res.status(200).send('Server is running');
+})
+
 
 app.listen(PORT , () => {
   console.log(`Server is running on port ${PORT}`);
